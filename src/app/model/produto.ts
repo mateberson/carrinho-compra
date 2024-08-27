@@ -1,9 +1,17 @@
 export class Produto {
-  public nome: string;
-  public preco: number;
+  private _nome: string;
+  private _preco: number;
 
   constructor(nome: string, preco: number) {
-    this.nome = nome;
-    this.preco = preco;
+    this._nome = nome;
+    this._preco = preco;
+  }
+
+  public get nome(): string {
+    return this._nome;
+  }
+
+  public get preco(): number {
+    return this._preco;
   }
 }
