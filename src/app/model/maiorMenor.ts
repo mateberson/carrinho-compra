@@ -11,7 +11,7 @@ export class MaiorEMenor {
         this._menor = produto;
       }
       // correção, remover o else
-      if (this._maior === undefined || produto.preco > this._maior.preco) {
+      else if (this._maior === undefined || produto.preco > this._maior.preco) {
         this._maior = produto;
       }
     });
